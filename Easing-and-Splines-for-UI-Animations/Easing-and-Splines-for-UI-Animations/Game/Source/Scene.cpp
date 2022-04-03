@@ -33,10 +33,10 @@ bool Scene::Start()
 	Ej.Position.x = 100;
 	Ej.Position.y = 100;
 	pointA = { 100,100 };
-	pointB = { 200,100 };
+	pointB = { 500,100 };
 	
 
-	total_iterations = 350;
+	total_iterations = 60;
 
 	speedX = 0;
 
@@ -60,14 +60,15 @@ bool Scene::Update(float dt)
 		app->SaveGameRequest();
 
 	if (app->input->GetKey(SDL_SCANCODE_9) == KEY_DOWN) {
+		Ej.Position.x = 100;
 		iterations = 0;
 		easing_active = true;
 	}
 
 	if (easing_active == true)
-		Ej.Position.x += EaseRectangleBetweenPoints(pointA, pointB);
+		Ej.Position.x += EaseRectangleBetweenPoints(pointA, pointB) * 0.05;
 
-	Exemple = {Ej.Position.x,Ej.Position.x, 100, 100};
+	Exemple = {Ej.Position.x,Ej.Position.y, 100, 100};
 	app->render->DrawRectangle(Exemple, 200, 200, 200);
 
 
@@ -88,7 +89,7 @@ bool Scene::PostUpdate()
 }
 
 float Scene::EaseRectangleBetweenPoints(iPoint posA, iPoint posB) {
-	float value = Efunction.backEaseIn(iterations, posA.x, posB.x - posA.x, total_iterations);
+	float value = Efunction.circEaseIn(iterations, posA.x, posB.x - posA.x, total_iterations);
 
 
 	//speedY = function.linearEaseNull(iterations, 472, 572, 300);
