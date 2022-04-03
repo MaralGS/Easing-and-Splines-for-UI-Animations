@@ -2,12 +2,18 @@
 #define __SCENE_H__
 
 #include "Module.h"
-
+#include "Animation.h"
+#include "Point.h"
+#include "EasingFunctions.h"
+#include <vector>
 
 //class GuiControl;
 
 struct SDL_Texture;
-
+struct Example 
+{
+	iPoint Position;
+};
 class Scene : public Module
 {
 public:
@@ -35,9 +41,21 @@ public:
 	// Called before quitting
 	bool CleanUp();
 
+	float EaseRectangleBetweenPoints(iPoint posA, iPoint posB);
+
 private:
 	SDL_Texture* img;
+	SDL_Rect Exemple;
+	Example Ej;
 
+	iPoint pointA;
+	iPoint pointB;
+
+	int iterations;
+	int total_iterations;
+	bool easing_active;
+	float speedX, speedY;
+	EasingFunctions Efunction;
 
 };
 

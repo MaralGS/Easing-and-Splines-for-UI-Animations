@@ -25,6 +25,7 @@ class Collisions;
 class Player;
 class QuestManager;
 
+
 class App
 {
 public:
@@ -100,6 +101,7 @@ public:
 	Collisions* collisions;
 	PathFinding* pathfinding;
 	QuestManager* questManager;
+
 
 private:
 

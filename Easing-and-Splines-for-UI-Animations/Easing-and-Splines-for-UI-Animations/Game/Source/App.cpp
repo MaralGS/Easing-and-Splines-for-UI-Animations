@@ -7,6 +7,7 @@
 #include "Collisions.h"
 #include "Player.h"
 
+
 #include "Defs.h"
 #include "Log.h"
 
@@ -36,6 +37,7 @@ App::App(int argc, char* args[]) : argc(argc), args(args)
 	AddModule(map);
 	AddModule(collisions);
 	AddModule(player);
+
 	// Render last to swap buffer
 	AddModule(render);
 }

@@ -4,6 +4,7 @@
 #include "Window.h"
 #include "Scene.h"
 #include "Map.h"
+#include "EasingFunctions.h"
 
 #include "Defs.h"
 #include "Log.h"
@@ -29,7 +30,15 @@ bool Scene::Awake()
 // Called before the first frame
 bool Scene::Start()
 {
+	Ej.Position.x = 100;
+	Ej.Position.y = 100;
+	pointA = { 100,100 };
+	pointB = { 200,100 };
+	
 
+	total_iterations = 300;
+
+	speedX = 0;
 
 	return true;
 }
@@ -50,6 +59,18 @@ bool Scene::Update(float dt)
 	if(app->input->GetKey(SDL_SCANCODE_S) == KEY_DOWN)
 		app->SaveGameRequest();
 
+	if (app->input->GetKey(SDL_SCANCODE_9) == KEY_DOWN) {
+		iterations = 0;
+		easing_active = true;
+	}
+
+	if (easing_active == true)
+		Ej.Position.x += EaseRectangleBetweenPoints(pointA, pointB);
+
+	Exemple = {Ej.Position.x,Ej.Position.x, 100, 100};
+	app->render->DrawRectangle(Exemple, 200, 200, 200);
+
+
 	// Draw map
 	app->map->Draw();
 	return true;
@@ -65,6 +86,27 @@ bool Scene::PostUpdate()
 
 	return ret;
 }
+
+float Scene::EaseRectangleBetweenPoints(iPoint posA, iPoint posB) {
+	float value = Efunction.backEaseOut(iterations, posA.x, posB.x - posA.x, total_iterations);
+
+
+	//speedY = function.linearEaseNull(iterations, 472, 572, 300);
+
+	//App->render->camera.y += speedY;
+
+	if (iterations < total_iterations) {
+		iterations++;
+	}
+
+	else {
+		iterations = 0;
+		easing_active = false;
+	}
+
+	return value;
+}
+
 
 // Called before quitting
 bool Scene::CleanUp()
