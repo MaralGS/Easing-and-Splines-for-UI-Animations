@@ -36,7 +36,7 @@ bool Scene::Start()
 	pointB = { 200,100 };
 	
 
-	total_iterations = 300;
+	total_iterations = 350;
 
 	speedX = 0;
 
@@ -88,7 +88,7 @@ bool Scene::PostUpdate()
 }
 
 float Scene::EaseRectangleBetweenPoints(iPoint posA, iPoint posB) {
-	float value = Efunction.backEaseOut(iterations, posA.x, posB.x - posA.x, total_iterations);
+	float value = Efunction.backEaseIn(iterations, posA.x, posB.x - posA.x, total_iterations);
 
 
 	//speedY = function.linearEaseNull(iterations, 472, 572, 300);
