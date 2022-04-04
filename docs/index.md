@@ -4,11 +4,12 @@ Created by Alex Garcia Selma. [GitHub](https://github.com/MaralGS)
 
 [GitHub Project](https://github.com/MaralGS/Easing-and-Splines-for-UI-Animations)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Introduction
+Hi, my name is Alex Garcia Selma student of the UPC at CITM, doing the degree of Devolopment and Design of Videogames. This Project is made for the second year’s subject Project 2. In this project im doing a research of what are the easing and splines for UI animations, what are they for, how many of them are and how to implement them in the project that we are doing for this subject.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## What is a Ui Easing?
+A UI easing is an animation made by a mathematic function to made more smooth and clean the Ui interacctions like camera moves, switch buttons or diverse moves.
+there are many types of functions that you can use and it depence on what you prefer and for what you want to use it, you can even create one if you want but mainly you will get them from the internet, in my case I got most of them from here [Easing Page](https://easings.net/#)
 
 ```markdown
 Syntax highlighted code block
