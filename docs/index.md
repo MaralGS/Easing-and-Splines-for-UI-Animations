@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+## Easing-and-Splines-for-UI-Animations
 
-You can use the [editor on GitHub](https://github.com/MaralGS/Easing-and-Splines-for-UI-Animations/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Created by Alex Garcia Selma. [GitHub](https://github.com/MaralGS/Easing-and-Splines-for-UI-Animations/edit/main/docs/index.md)
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
