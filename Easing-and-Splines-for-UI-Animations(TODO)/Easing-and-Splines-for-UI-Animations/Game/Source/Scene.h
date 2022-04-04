@@ -48,11 +48,9 @@ private:
 	SDL_Rect Exemple;
 	Example Ej;
 
-	iPoint pointA;
-	iPoint pointB;
+	//TODO2: Create two points and a varable to write the time of the animation
+	
 
-	int iterations;
-	int total_iterations;
 	bool easing_active;
 	//TODO1: Implement the EasingFunction class
 

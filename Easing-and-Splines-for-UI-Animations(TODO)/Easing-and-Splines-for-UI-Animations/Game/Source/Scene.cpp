@@ -33,9 +33,8 @@ bool Scene::Start()
 	Ej.Position.x = 100;
 	Ej.Position.y = 100;
 	//TODO2: Determine the inital and the final point
-	pointA = { 100,100 };
-	pointB = { 500,100 };
 	
+
 	//TODO2: Determine the time of the animation (Remeber is the dt * the time you want your animation)
 	
 
@@ -63,7 +62,8 @@ bool Scene::Update(float dt)
 	if (app->input->GetKey(SDL_SCANCODE_9) == KEY_DOWN) {
 		
 		Ej.Position.x = 100;
-		iterations = 0;
+		//TODO3 Set the inital time to 0
+
 		easing_active = true;
 	}
 
@@ -97,15 +97,9 @@ float Scene::EaseRectangleBetweenPoints(iPoint posA, iPoint posB) {
 	
 
 	
+	//TODO4 Make an if that adds one to te inital time until it reaches the final time and when it arrives deactivates the easing and sets the inital time to 0
+	
 
-	if (iterations < total_iterations) {
-		iterations++;
-	}
-
-	else {
-		iterations = 0;
-		easing_active = false;
-	}
 
 	//TODO5: Return the value of the variable
 	return;
