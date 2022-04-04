@@ -10,6 +10,7 @@ Hi, my name is Alex Garcia Selma student of the UPC at CITM, doing the degree of
 ## What is a Ui Easing?
 A UI easing is an animation made by a mathematic function to made more smooth and clean the Ui interacctions like camera moves, switch buttons or diverse moves.
 there are many types of functions that you can use and it depence on what you prefer and for what you want to use it, you can even create one if you want but mainly you will get them from the internet, in my case I got most of them from here [Easing Page](https://easings.net/#)
+
 <p align="center">
 <img src="https://github.com/MaralGS/Easing-and-Splines-for-UI-Animations/blob/main/docs/easingAnimation.gif">
 </p>
@@ -20,15 +21,21 @@ Exemple of a easing
 
 Each easing function depends on four parameters:
 
--Current time (t) which is the moment where the object is.
--Beginning value (b) which the position where the object is at the moment t.
--Change in value (c) which is the difference of value between the current position and the final position.
--Duration (d) which is the total number of iterations that you want your animation to have, needs to be the current unit as the starting time.
+- Current time (t) which is the moment where the object is.
+
+- Beginning value (b) which the position where the object is at the moment t.
+
+- Change in value (c) which is the difference of value between the current position and the final position.
+
+- Duration (d) which is the total number of iterations that you want your animation to have, needs to be the current unit as the starting time.
 
 There are three type of functions:
--Ease in function: describes the positive acceleration of the object.
--Ease out function: describes the negative acceleration (deacceleration) of the object.
--Ease in and out function: mixes both of the previous functions describing first and acceleration followed by a deacceleration.
+
+- Ease in function: describes the positive acceleration of the object.
+
+- Ease out function: describes the negative acceleration (deacceleration) of the object.
+
+- Ease in and out function: mixes both of the previous functions describing first and acceleration followed by a deacceleration.
 
 ## Code to implement the easing
 First, you will have to create a funtion where u will send the four parameters explained previously:
@@ -111,7 +118,7 @@ There are a lot of different types of splines but here only the most common ones
 
 
 - B-Spline (Basic Spline): it's a spline defined as a linear combination of control points that has a minimal support given a degree, smoothness and domain. This spline is commonly used because it allows to express any spline of a certain degree by a linear combination of B-Splines of that degree. The term B-Spline was defined by Isaac Jacob Schoenberg.
-- 
+
 
 - NURBS (Non-uniform rational B-Spline): is a mathematical model commonly used in computer graphics for generating and representing curves and surfaces. It is a type of B-spline that offers great flexibility and precision for handling both analytic (in mathematical form) and modeled shapes.
 
