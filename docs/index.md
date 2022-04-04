@@ -10,6 +10,7 @@ Hi, my name is Alex Garcia Selma student of the UPC at CITM, doing the degree of
 ## What is a Ui Easing?
 A UI easing is an animation made by a mathematic function to made more smooth and clean the Ui interacctions like camera moves, switch buttons or diverse moves.
 there are many types of functions that you can use and it depence on what you prefer and for what you want to use it, you can even create one if you want but mainly you will get them from the internet, in my case I got most of them from here [Easing Page](https://easings.net/#)
+
 <p align="center">
 <img src="https://github.com/MaralGS/Easing-and-Splines-for-UI-Animations/blob/main/docs/easingAnimation.gif">
 </p>
@@ -21,13 +22,19 @@ Exemple of a easing
 Each easing function depends on four parameters:
 
 -Current time (t) which is the moment where the object is.
+
 -Beginning value (b) which the position where the object is at the moment t.
+
 -Change in value (c) which is the difference of value between the current position and the final position.
+
 -Duration (d) which is the total number of iterations that you want your animation to have, needs to be the current unit as the starting time.
 
 There are three type of functions:
+
 -Ease in function: describes the positive acceleration of the object.
+
 -Ease out function: describes the negative acceleration (deacceleration) of the object.
+
 -Ease in and out function: mixes both of the previous functions describing first and acceleration followed by a deacceleration.
 
 ## Code to implement the easing
