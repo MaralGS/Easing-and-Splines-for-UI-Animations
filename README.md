@@ -9,6 +9,6 @@ In this project im doing a research of what are the easing and splines for UI an
 
 [Easing Preview](https://easings.net/)
 
-[How UI Easing Works] (https://www.youtube.com/watch?v=JXC3e52kcq0)
+[How UI Easing Works](https://www.youtube.com/watch?v=JXC3e52kcq0)
 
-[Easing Functions for the code] (http://www.gizma.com/easing/#sin1)
+[Easing Functions for the code](http://www.gizma.com/easing/#sin1)
