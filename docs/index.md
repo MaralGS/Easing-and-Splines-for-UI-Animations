@@ -146,3 +146,11 @@ A great example of how a spline defines the motion of a camera in 2D videogames 
 In 3D and VR videogames splines take a great importance in camera views, allowing the camera to move from a First Person point of view. A great example of this phenomenon is a simple rollercoaster where, if the camera follows the spline, the user can experience the view as if he were on that rollercoaster.
 Here there's a video example of how a 3D camera following a spline creates a more realistic view:
 
+### Relevant Links
+[Easing Animation](https://www.kirupa.com/html5/animating_with_easing_functions_in_javascript.htm)
+
+[Easing Preview](https://easings.net/)
+
+[How UI Easing Works](https://www.youtube.com/watch?v=JXC3e52kcq0)
+
+[Easing Functions for the code](http://www.gizma.com/easing/#sin1)
