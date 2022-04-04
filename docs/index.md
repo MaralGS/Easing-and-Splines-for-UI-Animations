@@ -11,7 +11,7 @@ Hi, my name is Alex Garcia Selma student of the UPC at CITM, doing the degree of
 A UI easing is an animation made by a mathematic function to made more smooth and clean the Ui interacctions like camera moves, switch buttons or diverse moves.
 there are many types of functions that you can use and it depence on what you prefer and for what you want to use it, you can even create one if you want but mainly you will get them from the internet, in my case I got most of them from here [Easing Page](https://easings.net/#)
 <p align="center">
-<img src="https://raw.githubusercontent.com/marcgreig/Easing-and-Splines-Research/master/docs/easingAnimation.gif">
+<img src="https://github.com/MaralGS/Easing-and-Splines-for-UI-Animations/blob/main/docs/easingAnimation.gif">
 </p>
 
 ```markdown
